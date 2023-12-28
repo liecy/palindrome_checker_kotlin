@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/first_page_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="32dp"
+    tools:context=".views.FirstActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="118dp"
+        android:layout_height="118dp"
+        android:src="@drawable/ic_photo"/>
+
+    <EditText
+        android:id="@+id/edtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/element_background"
+        android:hint="@string/name"
+        android:paddingHorizontal="24dp"
+        android:paddingVertical="12dp"/>
+
+    <EditText
+        android:id="@+id/edtSentence"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/element_background"
+        android:hint="@string/palindrome"
+        android:paddingHorizontal="24dp"
+        android:paddingVertical="12dp"/>
+
+    <Button
+        android:id="@+id/btnCheck"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="@string/check"
+        android:background="@drawable/element_background" />
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/next"
+        android:background="@drawable/element_background" />
+
+</LinearLayout>
