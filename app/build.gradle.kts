@@ -15,6 +15,7 @@ android {
         versionName = "1.0"
         buildConfigField ("String", "BASE_URL", "\"https://reqres.in/api/\"")
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        multiDexEnabled = true
     }
 
     buildTypes {
@@ -61,4 +62,6 @@ dependencies {
     implementation("com.squareup.retrofit2:retrofit:2.9.0")
     implementation("com.squareup.retrofit2:converter-gson:2.9.0")
     implementation("com.squareup.okhttp3:logging-interceptor:4.9.1")
+
+    implementation ("androidx.multidex:multidex:2.0.1")
 }
